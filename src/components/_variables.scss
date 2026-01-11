@@ -1,0 +1,52 @@
+//colors base
+$pr-main-color: #03a9f4;
+$pr-2: #f75e2e;
+$pr-3: #ecfa4d;
+$pr-4: #656a70;
+
+//lighten
+$light-1-main-color: mix(#ffff, $pr-main-color, 40%);
+$light-2-main-color: mix(#ffff, $pr-main-color, 75%);
+$light-3-main-color: mix(#ffff, $pr-main-color, 90%);
+
+$light-1-pr2-color: mix(#ffff, $pr-2, 40%);
+$light-2-pr2-color: mix(#ffff, $pr-2, 75%);
+$light-3-pr2-color: mix(#ffff, $pr-2, 90%);
+
+$light-1-pr3-color: mix(#ffff, $pr-3, 40%);
+$light-2-pr3-color: mix(#ffff, $pr-3, 75%);
+$light-3-pr3-color: mix(#ffff, $pr-3, 90%);
+
+$light-1-pr4-color: mix(#ffff, $pr-4, 40%);
+$light-2-pr4-color: mix(#ffff, $pr-4, 75%);
+$light-3-pr4-color: mix(#ffff, $pr-4, 90%);
+
+
+//darken
+$dark-1-main-color: mix(black, $pr-main-color, 20%);
+$dark-2-main-color: mix(black, $pr-main-color, 50%);
+$dark-3-main-color: mix(black, $pr-main-color, 70%);
+
+$dark-1-pr2-color: mix(black, $pr-2, 20%);
+$dark-2-pr2-color: mix(black, $pr-2, 50%);
+$dark-3-pr2-color: mix(black, $pr-2, 70%);
+
+$dark-1-pr3-color: mix(black, $pr-3, 20%);
+$dark-2-pr3-color: mix(black, $pr-3, 50%);
+$dark-3-pr3-color: mix(black, $pr-3, 70%);
+
+$dark-1-pr4-color: mix(black, $pr-4, 20%);
+$dark-2-pr4-color: mix(black, $pr-4, 50%);
+$dark-3-pr4-color: mix(black, $pr-4, 70%);
+
+//fonts
+$font-regular: 'Poppins-Regular';
+$font-light: 'Poppins-Light';
+$font-medium: 'Poppins-Medium';
+$font-bold: 'Poppins-Bold';
+$font-semibold: 'Poppins-SemiBold';
+// Subtitles & Special text
+$size-subtitle: 18px;
+$color-subtitle: $dark-1-pr4-color;
+$size-small: 13px;
+$color-small: mix(black, $pr-4, 20%); 

@@ -1,0 +1,35 @@
+
+
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid $light-2-pr4-color; // світло-сірий бордюр
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include font($font-medium, 16px, $pr-4); // Сірий колір тексту
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $pr-main-color;
+        }
+    }
+
+    &__phone {
+        text-decoration: none;
+        @include font($font-bold, 16px, $pr-main-color);
+        margin-right: 20px;
+    }
+}
