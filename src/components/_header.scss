@@ -1,14 +1,33 @@
-
-
 .header {
-    background-color: #fff;
-    padding: 15px 0;
-    border-bottom: 1px solid $light-2-pr4-color; // світло-сірий бордюр
+    background-color: $pr-main-color; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 30px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        
+        @include font('Gabriola', 35px, #fff);
+        
+        img {
+            max-width: 40px; 
+        }
+
+        span {
+            @include font('OpenSans-Extrabold', 22px, $pr-3); 
+            text-transform: uppercase;
+        }
     }
 
     &__menu {
@@ -19,17 +38,69 @@
 
     &__link {
         text-decoration: none;
-        @include font($font-medium, 16px, $pr-4); // Сірий колір тексту
-        transition: color 0.3s ease;
+        @include font($font-medium, 15px, #fff); 
+        transition: opacity 0.3s;
 
         &:hover {
-            color: $pr-main-color;
+            opacity: 0.7;
         }
     }
 
-    &__phone {
-        text-decoration: none;
-        @include font($font-bold, 16px, $pr-main-color);
-        margin-right: 20px;
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
+
+    &__phone {
+        margin-right: 10px;
+        img {
+            display: block;
+            width: 80px; 
+        }
+       
+    }
+
+    &__burger {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;  
+    height: 18px; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    span {
+        display: block;
+        width: 100%;
+        height: 3px; 
+        background-color: #fff; 
+        border-radius: 2px;
+    }
+
+    
+}
+}
+
+// Кнопка Sign In 
+.btn--signin {
+    background-color: $dark-1-main-color;
+    padding: 8px 20px;
+    border: 0;
+    @include font($font-semibold, 14px, #fff);
+    cursor: pointer;
+
+}
+
+// Кнопка Order 
+.btn--order {
+    background-color: $pr-2; 
+    padding: 8px 25px;
+    border: none;
+    @include font($font-bold, 14px, #fff);
+    text-transform: uppercase;
+    cursor: pointer;
+    
 }

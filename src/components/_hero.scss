@@ -1,0 +1,176 @@
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 600px; 
+    padding-top: 160px;
+    padding-bottom: 120px;    
+    // Використовуємо твій колір, 0.6 - це прозорість
+    background-color: rgba($light-2-main-color, 0.6);
+    background-image: url('/src/img/img_cloud.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    overflow: visible;
+
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    &__content {
+        flex: 1;
+        width: 100%; // На всю ширину контейнера
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    // align-items: center; 
+    // text-align: center;
+    position: relative;
+    }
+
+    &__title {
+        @include font('OpenSans-Extrabold', 48px, #fff);
+        line-height: 1.1;
+        margin-bottom: 10px;
+        padding-left: 30px;
+        max-width: 600px;
+
+        .hpart1 {
+            color: $pr-main-color;
+        }
+        .hpart2 {
+            color: black;
+        }
+    }
+
+    &__subtitle {
+        @include font('Poppins-Regular', 18px, black);
+        margin-bottom: 30px;
+        max-width: 500px;
+        padding-left: 30px;
+    }
+
+
+
+&__calc {
+    display: flex !important;
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto -150px;
+    position: relative;
+    background-color: $pr-main-color;
+    padding: 20px;
+   
+}
+}
+
+// ОКРЕМІ КОМІРКИ (Бокси)
+.calc-box {
+    flex: 1;
+    background: #fff;      // Кожен бокс тепер білий
+    padding: 12px 20px;
+    
+
+    label {
+        display: block;
+        @include font('Poppins-Regular', 14px, $pr-4);
+        margin-bottom: 6px;
+        opacity: 0.7;
+    }
+    
+    select, input {
+        border: none;
+        width: 100%;
+        @include font('Poppins-Regular', 14px, grey);
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+// Контейнер для кнопки (теж окремий або притиснутий)
+.calc-total {
+    display: flex;
+    align-items: stretch;
+}
+
+.btn--calc {
+    background-color: $pr-2; // Твій помаранчевий
+    color: #fff;
+    border: none;
+    padding: 0 40px;
+    height: 58px;            // Висота має збігатися з висотою боксів
+    border-radius: 10px;
+    @include font('Poppins-Bold', 16px, #fff);
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba($pr-2, 0.3);
+
+    &:hover {
+        background-color: $dark-1-pr2-color;
+        transform: translateY(-2px);
+    }
+
+  
+}
+
+
+
+.calc-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin-top: 5px;
+
+    .counter-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+
+        cursor: pointer;
+        @include font('Poppins-Bold', 18px, grey);
+    }
+
+    input {
+        width: 40px;
+        text-align: center;
+        border: none;
+        background: transparent;
+        @include font('Poppins-Bold', 16px, $dark-1-main-color);
+        
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+}
+   
+
+
+.hero__image {
+    position: absolute;
+    right: 40px;
+    bottom: -30px;
+    width: 200px;
+
+    img { width: 100%; display: block; }
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: $pr-2;
+    width: 100px;
+    margin: 20px 0;
+}

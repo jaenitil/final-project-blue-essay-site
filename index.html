@@ -8,33 +8,96 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
+
     <header class="header">
   <div class="container">
     <div class="header__inner">
+      
       <a href="/" class="header__logo">
-        <img src="/src/img/icon-logo.jpg" alt="BlueEssay Logo">
+        <img src="/src/img/icon-logo.png" alt="BlueEssay Logo">
+        Blue<span>Essay</span>site 
       </a>
 
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a href="#services" class="header__link">Services</a></li>
-          <li><a href="#prices" class="header__link">Prices</a></li>
-          <li><a href="#reviews" class="header__link">Reviews</a></li>
-          <li><a href="#faq" class="header__link">FAQ</a></li>
+          <li><a href="#" class="header__link">Services</a></li>
+          <li><a href="#" class="header__link">About us</a></li>
+          <li><a href="#" class="header__link">How it works</a></li>
         </ul>
       </nav>
 
       <div class="header__actions">
-        <a href="tel:+123456789" class="header__phone">+1 (234) 567-89</a>
-        <a href="#" class="btn btn--primary">Order Now</a>
+        <a href="" class="header__phone">
+          <img src="/src/img/Vector Smart Object5.png" alt="">
+        </a>
+        
+        <button class="btn btn--signin">Sign In</button>
+        <button class="btn btn--order">Order</button>
+        
+        <button class="header__burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      
-      <button class="header__burger" id="burger">
-        <span></span>
-      </button>
     </div>
   </div>
 </header>
+<section class="hero">
+  <div class="hero__clouds"></div>
+  <div class="container">
+    <div class="hero__inner">
+      
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hpart1">BlueEssaySite.net -</span><br>
+          <span class="hpart2">expert help for custom Written</span>
+          <hr>
+        </h1>
+
+        <p class="hero__subtitle">
+          On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
+        </p>
+
+        <div class="hero__calc-wrapper">
+          
+          <div class="hero__image">
+            <img src="/src/img/girl.png" alt="Student" class="hero__girl">
+          </div>
+
+          <div class="hero__calc">
+            <div class="calc-box">
+              <label>Type of paper</label>
+              <select class="calc-select"><option>Placeholder text</option></select>
+            </div>
+            
+            <div class="calc-box">
+              <label>Writer level</label>
+              <select class="calc-select"><option>High school</option></select>
+            </div>
+
+            <div class="calc-box">
+              <label>Urgency</label>
+              <select class="calc-select"><option>21 days</option></select>
+            </div>
+
+            <div class="calc-box">
+              <label>Number of pages</label>
+              <div class="calc-counter">
+                <button type="button" class="counter-btn minus">-</button>
+    <input type="number" value="1" min="1" readonly>
+    <button type="button" class="counter-btn plus">+</button>
+              </div>
+            </div>
+
+            <div class="calc-total">
+              <button class="btn btn--calc">Continue</button>
+            </div>
+          </div>
+        </div> </div>
+    </div>
+  </div>
+</section>
     
   </body>
 </html>
