@@ -1,0 +1,83 @@
+
+.advantages {
+    background-color: $pr-main-color; 
+    background-image: url('/src/img/icons_transparent.png'); 
+    background-repeat: repeat;   
+    background-position: center;  
+    background-size: 1200px;                         
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+
+    &__top {
+        margin-bottom: 60px;
+    }
+
+    &__num {
+        @include font('Poppins-Regular', 14px, #fff);
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        @include font('OpenSans-Extrabold', 32px, #fff);
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 50px;
+
+    }
+
+    &__action {
+        .btn--white-outline {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 5px;
+            @include font('Poppins-Bold', 14px, #fff);
+            text-transform: uppercase;
+            transition: all 0.3s;
+
+        }
+    }
+}
+
+
+.advantage-card {
+    background: #fff;
+    flex: 0 1 360px;
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 25px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        @include font('Poppins-Bold', 18px, rgb(34, 34, 34));
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    &__text {
+        @include font('Poppins-Regular', 14px, #777);
+        line-height: 1.6;
+    }
+}
