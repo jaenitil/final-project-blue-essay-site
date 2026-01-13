@@ -1,0 +1,49 @@
+
+.cta {
+    padding: 100px 0; 
+    position: relative;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 80px; 
+
+        max-width: 1200px;       
+        margin: 0 auto;
+
+    }
+
+    .welcome-img {
+        max-width: 300px;
+        position: relative;
+    }
+
+    &__inner {
+        max-width: 600px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            @include font('Poppins-Regular', 14px, $pr-main-color);
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+
+    &__title {
+        @include font('OpenSans-Extrabold', 36px, black);
+        line-height: 1.2;
+        margin-bottom: 25px;
+        text-transform: none;
+
+    }
+
+    &__text {
+        @include font('Poppins-Regular', 16px, $pr-4);
+        line-height: 1.8; 
+        color: #666; 
+    }
+}

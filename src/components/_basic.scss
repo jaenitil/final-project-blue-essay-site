@@ -1,8 +1,7 @@
-// Скидання базових налаштувань (Reset)
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; // Це критично, щоб padding не роздував блоки
+    box-sizing: border-box; 
 }
 
 body {
@@ -10,25 +9,22 @@ body {
     color: $pr-4;
     line-height: 1.5;
     background-color: #fff;
-    overflow-x: hidden; // Запобігає появі горизонтальної прокрутки через дівчинку
+    overflow-x: hidden; 
 }
 
-// Головний контейнер
 .container {
-    max-width: 1200px; // Або 1170px, як у більшості шаблонів есе
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
 }
 
-// Налаштування для зображень
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-// Кнопки (загальні стилі)
 .btn {
     display: inline-flex;
     align-items: center;
@@ -40,7 +36,6 @@ img {
     text-decoration: none;
 }
 
-// Скидання для списків
 ul, ol {
     list-style: none;
 }
