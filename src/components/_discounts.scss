@@ -1,0 +1,98 @@
+.discounts {
+    background-color: $pr-main-color; 
+    background-image: url('/src/img/img-2.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    background-size: contain;
+    padding: 100px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: visible; 
+
+    &__top {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    &__num {
+        @include font('OpenSans-Semibold', 14px, #ffffff);
+        opacity: 0.8;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        @include font('Poppins-Regular', 36px, #fff);
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        @include font('Poppins-Regular', 16px, #fff);
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    &__box {
+        display: flex;
+        max-width: 950px;
+        margin: 40px auto -200px; 
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden; 
+        position: relative;
+
+    }
+
+    &__grid {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        border-right: none; 
+        padding: 10px;
+    }
+
+    &__coupon {
+        flex: 0 0 350px; 
+        background-color: $pr-main-color; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: auto; 
+            display: block;
+            object-fit: contain; 
+        }
+
+    }
+    .discount-item {
+    padding: 40px 20px;
+    border: 0.5px solid #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__val {
+        @include font('Poppins-Bold', 32px, $pr-2); 
+        line-height: 1;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 14px;
+            display: block;
+        }
+    }
+
+    &__desc {
+        @include font('Poppins-Regular', 12px, #999);
+        span {
+            color: $pr-main-color;
+            font-weight: bold;
+        }
+    }
+}
+}

@@ -1,0 +1,79 @@
+
+.testimonials {
+    background-color: #fff;
+    padding: 220px 0 100px; 
+    text-align: center;
+
+    &__top {
+        margin-bottom: 50px;
+    }
+
+    &__num {
+        @include font('Poppins-Regular', 14px, $pr-main-color);
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        @include font('OpenSans-Semibold', 32px, black);
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 40px;
+        position: relative;
+    }
+}
+
+.testimonial-item {
+    flex: 1;
+    max-width: 700px;
+
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 30px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #f0f4f8; 
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        @include font('Poppins-Regular', 16px, #777);
+        line-height: 1.8;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    &__author {
+        @include font('Poppins-Bold', 18px, $pr-main-color);
+        margin-bottom: 5px;
+    }
+
+    &__date {
+        @include font('Poppins-Regular', 13px, #ccc);
+    }
+}
+
+.slider-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    transition: transform 0.2s;
+
+    img {
+        width: 100%;
+    }
+
+}
